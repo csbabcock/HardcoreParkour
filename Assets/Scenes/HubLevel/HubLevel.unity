@@ -9169,7 +9169,8 @@ PrefabInstance:
       propertyPath: cheatText
       value: 
       objectReference: {fileID: 2101257730}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3557027679169785710, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
 --- !u!1 &1416128308 stripped
 GameObject:
@@ -11876,6 +11877,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!1 &1880587945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889809943926586450, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
+  m_PrefabInstance: {fileID: 1412614875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1880587947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880587945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20421782, y: 0.332767, z: 0.15854141}
+  m_Center: {x: -0.012242943, y: 0.03978896, z: 0.035132557}
 --- !u!1 &1887807282
 GameObject:
   m_ObjectHideFlags: 0
