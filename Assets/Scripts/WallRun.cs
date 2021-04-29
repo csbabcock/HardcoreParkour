@@ -26,6 +26,8 @@ public class WallRun : MonoBehaviour
     public float jumpForce;
 
 
+
+
     private void Awake()
     {
         animatorManager = GetComponent<AnimatorManager>();
@@ -76,7 +78,8 @@ public class WallRun : MonoBehaviour
                 {
                     wallRunR = true;
                     animatorManager.PlayTargetAnimation("WallRunR", true);
-                    playerLocomotion.playerRigidbody.AddForce(orientation.right * wallrunForce / 5 * Time.deltaTime);
+                    playerLocomotion.playerRigidbody.AddForce(UnityEngine.Camera.main.transform.TransformDirection(Vector3.forward) * wallrunForce, ForceMode.Impulse);
+                   
                     wallRunTime += Time.deltaTime;
                 }
                     
@@ -84,7 +87,8 @@ public class WallRun : MonoBehaviour
                 {   
                     wallRunL = true;
                     animatorManager.PlayTargetAnimation("WallRunL", true);
-                    playerLocomotion.playerRigidbody.AddForce(-orientation.right * wallrunForce / 5 * Time.deltaTime);
+                    playerLocomotion.playerRigidbody.AddForce(UnityEngine.Camera.main.transform.TransformDirection(Vector3.forward) * wallrunForce, ForceMode.Impulse);
+                    
                     wallRunTime += Time.deltaTime;
                 }
 
