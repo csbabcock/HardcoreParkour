@@ -2348,6 +2348,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &367058854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1188459701724521341, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
+  m_PrefabInstance: {fileID: 2101257726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &371516901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4926,6 +4937,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 813306024269f9e43849864f3274dc4a, type: 3}
+--- !u!114 &756338066 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8249053541799061327, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
+  m_PrefabInstance: {fileID: 2101257726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &796487566
 GameObject:
   m_ObjectHideFlags: 0
@@ -9089,6 +9111,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 901348221, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 367058854}
+    - target: {fileID: 901348221, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
+      propertyPath: finalScore
+      value: 
+      objectReference: {fileID: 756338066}
     - target: {fileID: 2026987864248273334, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -12372,7 +12402,7 @@ PrefabInstance:
     - target: {fileID: 8980060579836317847, guid: 42c625b3ca5c57b489d83fe7e925a1d6, type: 3}
       propertyPath: gameUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 646219857}
     - target: {fileID: 8980060579836317847, guid: 42c625b3ca5c57b489d83fe7e925a1d6, type: 3}
       propertyPath: winLoseScreen
       value: 
@@ -13501,7 +13531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1245975365710938990, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1279605092316554130, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
       propertyPath: m_AnchorMax.x
