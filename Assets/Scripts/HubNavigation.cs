@@ -60,7 +60,7 @@ public class HubNavigation : MonoBehaviour
         //Hub's "death pit"
         if(other.tag =="HubPit")
         {
-            transform.position = new Vector3(0, 0, 0);
+            transform.position = new Vector3(0, 1, 0);
             PlaySound(resetSound);
         }
 

@@ -19530,6 +19530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5444280385986915368, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5444280385986915374, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
       propertyPath: winLoseScreen
       value: 
@@ -19546,6 +19550,10 @@ PrefabInstance:
       propertyPath: cheatText
       value: 
       objectReference: {fileID: 616391069}
+    - target: {fileID: 5444280385986915374, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 5050396846146268906, guid: 610cbf2dd396e9140a0f6eec18a53311, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
 --- !u!1001 &1423623397378350269

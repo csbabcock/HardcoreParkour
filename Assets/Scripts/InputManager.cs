@@ -49,6 +49,11 @@ public class InputManager : MonoBehaviour
     PauseAction pauseAction;
     public Text cheatText;
 
+    static bool level1 = false;
+    static bool level2 = false;
+    static bool level3 = false;
+    public GameObject gameOver;
+
     private void Awake()
     {
         animatorManager = GetComponent<AnimatorManager>();
@@ -57,6 +62,7 @@ public class InputManager : MonoBehaviour
         objCollider.enabled = !objCollider.enabled;
         obj.isKinematic = true;
         cheatText.text = " ";
+        gameOver.SetActive(false);
        
         thrownObjectText.text = "Holding Ball";
 
@@ -69,6 +75,19 @@ public class InputManager : MonoBehaviour
     {
         TimerController.instance.BeginTimer();
         playerColliderComponent = GetComponent<BoxCollider>();
+    }
+
+    void Update()
+    {
+        if(level1 == true && level2 == true && level3 == true)
+        {
+            gameOver.SetActive(true);
+            winLoseScreen.SetActive(false);
+            Time.timeScale = 0;
+            level1 = false;
+            level2 = false;
+            level3 = false;
+        }
     }
 
     private void OnEnable()
@@ -241,6 +260,7 @@ public class InputManager : MonoBehaviour
             Cursor.visible = true;
             TimerController.instance.EndTimer();
             Destroy(other.gameObject);
+            level1 = true;
         }
         
         if (other.tag == "FinishLevel2")
@@ -251,6 +271,7 @@ public class InputManager : MonoBehaviour
             Cursor.visible = true;
             TimerController.instance.EndTimer();
             Destroy(other.gameObject);
+            level2 = true;
         }
 
         if (other.tag == "FinishLevel3")
@@ -261,6 +282,7 @@ public class InputManager : MonoBehaviour
             Cursor.visible = true;
             TimerController.instance.EndTimer();
             Destroy(other.gameObject);
+            level3 = true;
         }
     }
 

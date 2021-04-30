@@ -58185,6 +58185,10 @@ PrefabInstance:
       propertyPath: cheatText
       value: 
       objectReference: {fileID: 219591634}
+    - target: {fileID: 5444280385986915374, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 5050396846146268906, guid: 610cbf2dd396e9140a0f6eec18a53311, type: 3}
     m_RemovedComponents:
     - {fileID: 1034901017091819665, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 148a61b658cb794459ef6a0521fe1df2, type: 3}

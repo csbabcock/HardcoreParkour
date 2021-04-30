@@ -11874,7 +11874,7 @@ PrefabInstance:
       objectReference: {fileID: 1869954159}
     - target: {fileID: 2026987864248273334, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
       propertyPath: m_Volume
-      value: 0.65
+      value: 0.425
       objectReference: {fileID: 0}
     - target: {fileID: 2026987864248273334, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
       propertyPath: m_audioClip
@@ -11944,6 +11944,10 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1617003727}
+    - target: {fileID: 6480682537161682185, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 5050396846146268906, guid: 610cbf2dd396e9140a0f6eec18a53311, type: 3}
     - target: {fileID: 6480682537161682186, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
       propertyPath: jumpHeight
       value: 12
@@ -34824,7 +34828,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: fdff67c64a10513449e6aa6fff983828, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5275952f32483fc4eafcd7d886a56cc6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -34833,7 +34837,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 125
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
