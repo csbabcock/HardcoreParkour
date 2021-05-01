@@ -9361,6 +9361,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 2118703594}
+    - target: {fileID: 6696555253241395868, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
+      propertyPath: maxWallSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3557027679169785710, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 820e227db3ea7274cb6e19ae5794854d, type: 3}
@@ -13704,7 +13708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8249053541527628982, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8249053542331756980, guid: 0edae384c6fdc8949b48a5711a9b0ba3, type: 3}
       propertyPath: m_IsActive
