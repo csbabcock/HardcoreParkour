@@ -48,6 +48,7 @@ public class InputManager : MonoBehaviour
 
     PauseAction pauseAction;
     public Text cheatText;
+    Rigidbody rigidbody;
 
     static bool level1 = false;
     static bool level2 = false;
@@ -65,6 +66,7 @@ public class InputManager : MonoBehaviour
         gameOver.SetActive(false);
        
         thrownObjectText.text = "Holding Ball";
+        rigidbody = GetComponent<Rigidbody>();
 
         //musicSource.clip = mainmusic;
         //musicSource.Play();
@@ -81,12 +83,14 @@ public class InputManager : MonoBehaviour
     {
         if(level1 == true && level2 == true && level3 == true)
         {
+            InputManager player = GetComponent<InputManager>();
             gameOver.SetActive(true);
             winLoseScreen.SetActive(false);
             Time.timeScale = 0;
             level1 = false;
             level2 = false;
             level3 = false;
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
 
